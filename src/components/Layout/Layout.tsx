@@ -9,13 +9,13 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <div className="flex justify-center items-center lg:py-30 sticky top-0">
+      <div className="flex justify-center items-center lg:py-30 sticky top-0 z-10">
         <div className="bg-studio-white rounded-100 backdrop-blur-lg flex p-1">
           {Static.navItems.map((navItem: any) => (
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="bg-white text-xs font-sans font-light rounded-100 py-3 px-30"
+              className="bg-white text-sm font-sans font-light rounded-100 py-10px px-7"
             >
               {navItem.name}
             </Link>
