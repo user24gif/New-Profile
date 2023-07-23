@@ -18,6 +18,7 @@ export default {
       },
       lineHeight: {
         86: "86px",
+        44: "44px",
       },
       backgroundImage: {
         aire: "url('https://framerusercontent.com/images/kfr022WaJ8YJUyZFmdwCB3pXhs.jpg?scale-down-to=1024')",
@@ -50,6 +51,9 @@ export default {
       minWidth: {
         "650px": "600px",
         "450px": "450px",
+      },
+      colors: {
+        "oh-gray": "#7f7f7f",
       },
     },
   },

@@ -2,6 +2,7 @@ import { Static } from "./utils/static";
 import Layout from "./components/Layout/Layout";
 import cx from "classnames";
 import Arrow from "./assets/arrow-up-right.svg";
+import Asterik from "./assets/asterik.png";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -45,6 +46,21 @@ function App() {
           </Link>
         ))}
       </div>
+      <div className="py-40 text-center">
+        <p className="text-4xl font-medium leading-44">Let's work together.</p>
+        <p className="text-4xl font-medium text-oh-gray">Get in touch.</p>
+      </div>
+      <footer className="flex flex-row items-center justify-between px-10">
+        <div className="flex items-center gap-1">
+          <img src={Asterik} alt="cta-icon" className="h-4 w-4" />
+          <p>Michael Harris {new Date().getFullYear()}</p>
+        </div>
+        <div className="flex gap-4">
+          <p>Twitter</p>
+          <p>LinkedIn</p>
+          <p>Mail</p>
+        </div>
+      </footer>
     </Layout>
   );
 }

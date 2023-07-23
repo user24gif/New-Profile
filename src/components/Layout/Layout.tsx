@@ -10,13 +10,13 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <div className="flex justify-center items-center lg:py-30 sticky top-0 z-10">
-        <div className="bg-studio-white rounded-100 backdrop-blur-lg flex p-1">
+      <div className="sticky top-0 z-10 flex items-center justify-center lg:py-30">
+        <div className="flex rounded-100 bg-studio-white p-1 backdrop-blur-lg">
           {Static.navItems.map((navItem: any) => (
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="bg-white text-sm font-sans font-light rounded-100 py-10px px-7"
+              className="rounded-100 bg-white px-7 py-10px font-sans text-sm font-light"
             >
               {navItem.name}
             </Link>
@@ -24,9 +24,9 @@ function Layout({ children }: LayoutProps) {
         </div>
       </div>
       {children}
-      <div className=" bg-studio-white text-black backdrop-blur-lg p-1 w-max rounded-3xl flex flex-row gap-1 items-center justify-center sticky z-10 bottom-5 mx-auto px-3 py-2">
+      <div className=" sticky bottom-10 z-10 mx-auto flex w-max flex-row items-center justify-center gap-1 rounded-3xl bg-studio-white p-1 px-3 py-2 text-black backdrop-blur-lg">
         <span>
-          <img className="w-5 h-5" src={Asterik} alt="logo" />
+          <img className="h-5 w-5" src={Asterik} alt="logo" />
         </span>
         <p>Shop</p>
       </div>
