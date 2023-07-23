@@ -42,20 +42,14 @@ export default {
         baselworld:
           "url('https://framerusercontent.com/images/hQVBeiDNGU2TfeDJALuhawlcto.jpg?scale-down-to=1024')",
         nycb: "url('https://framerusercontent.com/images/hQVBeiDNGU2TfeDJALuhawlcto.jpg?scale-down-to=1024')",
+        asterik: "url('./src/assets/asterik.png')",
       },
       maxWidth: {
         "1400px": "1400px",
-        "650px": "650px",
       },
       minWidth: {
         "650px": "600px",
         "450px": "450px",
-      },
-      width: {
-        // "44%": "49%",
-      },
-      flexBasis: {
-        "650px": "650px",
       },
     },
   },

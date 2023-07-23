@@ -1,6 +1,7 @@
 import React from "react";
 import { Static } from "../../utils/static";
 import { Link } from "react-router-dom";
+import Asterik from "../../assets/asterik.png";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -23,6 +24,12 @@ function Layout({ children }: LayoutProps) {
         </div>
       </div>
       {children}
+      <div className=" bg-studio-white text-black backdrop-blur-lg p-1 w-max rounded-3xl flex flex-row gap-1 items-center justify-center sticky z-10 bottom-5 mx-auto px-3 py-2">
+        <span>
+          <img className="w-5 h-5" src={Asterik} alt="logo" />
+        </span>
+        <p>Shop</p>
+      </div>
     </div>
   );
 }
