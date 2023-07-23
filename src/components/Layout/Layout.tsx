@@ -2,7 +2,11 @@ import React from "react";
 import { Static } from "../../utils/static";
 import { Link } from "react-router-dom";
 
-function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+function Layout({ children }: LayoutProps) {
   return (
     <div>
       <div className="flex justify-center items-center lg:py-30 sticky top-0">
