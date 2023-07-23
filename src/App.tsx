@@ -27,7 +27,8 @@ function App() {
       </div>
       <div className="mx-auto grid max-w-1400px grid-cols-2 gap-5 px-10 py-10">
         {Static.cards.map((card: any) => (
-          <div
+          <Link
+            to="/profile"
             key={card.name}
             // className={`${card.bg} lg:flex-shrink lg:max-w-650px  lg:w-full lg:h-496px rounded-xl bg-cover bg-center`}
             className={`${card.bg}  group relative h-496px rounded-xl bg-cover bg-center after:absolute after:left-0 after:top-0 after:h-496px after:w-full after:content-[''] hover:after:rounded-xl hover:after:backdrop-blur-sm hover:after:backdrop-brightness-50 hover:after:transition hover:after:duration-500 hover:after:ease-out`}
@@ -37,11 +38,11 @@ function App() {
             </p>
             <Link
               to="/profile"
-              className="hidden group-hover:absolute group-hover:right-5 group-hover:top-5 group-hover:z-10 group-hover:block group-hover:cursor-pointer group-hover:rounded-full group-hover:bg-white group-hover:p-4 "
+              className="hidden group-hover:absolute group-hover:right-5 group-hover:top-5 group-hover:z-10 group-hover:block group-hover:rounded-full group-hover:bg-white group-hover:p-4 "
             >
               <img src={Arrow} alt="cta-icon" />
             </Link>
-          </div>
+          </Link>
         ))}
       </div>
     </Layout>
