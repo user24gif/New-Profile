@@ -10,9 +10,9 @@ function App() {
     <Layout>
       <div className="flex h-70vh flex-col items-center justify-center gap-10 py-10">
         <p className="max-w-3xl text-center text-7xl font-medium leading-86">
-          A brand and product designer working with clients globally
+        <span className="font-light">Hello! I'm</span> <br />Ramanan Vijayaragavan
         </p>
-        <div className="flex gap-10px p-1">
+        {/* <div className="flex gap-10px p-1">
           {Static.headerItems.map((navItem: any, idx: number) => (
             <p
               key={navItem}
@@ -24,7 +24,7 @@ function App() {
               {navItem}
             </p>
           ))}
-        </div>
+        </div> */}
       </div>
       <div className="mx-auto grid max-w-1400px grid-cols-2 gap-5 px-10 py-10">
         {Static.cards.map((card: any) => (
@@ -50,10 +50,10 @@ function App() {
         <p className="text-4xl font-medium leading-44">Let's work together.</p>
         <p className="text-4xl font-medium text-oh-gray">Get in touch.</p>
       </div>
-      <footer className="flex flex-row items-center justify-between px-10">
+      <footer className="flex flex-row items-center justify-between p-10">
         <div className="flex items-center gap-1">
           <img src={Asterik} alt="cta-icon" className="h-4 w-4" />
-          <p>Michael Harris {new Date().getFullYear()}</p>
+          <p>Ramanan Vijayragavan {new Date().getFullYear()}</p>
         </div>
         <div className="flex gap-4">
           <p>Twitter</p>
