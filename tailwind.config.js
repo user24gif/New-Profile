@@ -5,9 +5,22 @@ export default {
     extend: {
       spacing: {
         30: "30px",
+        1:"10px",
+        2:"20px",
+        3:"30px",
+        4:"40px",
+        5:"50px",
+        6:"60px",
+        7:"70px",
+        8:"80px",
+        9:"90px",
+        10:"100px",
+        11:"110px",
+        12:"120px",
         "10px": "10px",
-        "70vh": "70vh",
+        "70vh": "89vh",
         "496px": "496px",
+        "296px":"296px",
         "60px": "60px",
       },
       backgroundColor: {
@@ -17,11 +30,13 @@ export default {
         100: "100px",
       },
       lineHeight: {
+        40:"52px",
+        92:"92px",
         86: "86px",
         44: "44px",
       },
       backgroundImage: {
-        aire: "url('https://framerusercontent.com/images/kfr022WaJ8YJUyZFmdwCB3pXhs.jpg?scale-down-to=1024')",
+        Spotify: "url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/12/Generic-FTR-headers_V10-1920x733.jpg')",
         correlated:
           "url('https://framerusercontent.com/images/QVKFKT3dyGxloXfzzpurVKNMM6M.jpg?scale-down-to=1024')",
         "channel-5":
@@ -54,6 +69,7 @@ export default {
       },
       colors: {
         "oh-gray": "#7f7f7f",
+        "Black": "#000"
       },
     },
   },
