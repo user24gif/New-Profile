@@ -1,10 +1,15 @@
 // interface Static {}
 
 export const Static: any = {
+  user: [
+    {name: "Ramanan Vijayaragavan"},
+  ],
   navItems: [
-    { name: "Home", path: "/" },
-    { name: "Profile", path: "/profile" },
-    { name: "Contact", path: "/Contact" },
+    { name: "Work", path: "/" },
+    { name: "About", path: "/Contact" }, 
+  ],
+  Accentbutton: [
+    { name: "Resume", path: "/" },
   ],
   headerItems: ["Expertise", "Branding", "Product", "Design Systems"],
   cards: [

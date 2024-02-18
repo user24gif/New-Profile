@@ -10,18 +10,41 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <div className="sticky top-0 z-10 flex items-center justify-center lg:py-30">
-        {/* <div className="flex rounded-100 bg-studio-white p-1 backdrop-blur-lg">
-          {Static.navItems.map((navItem: any) => (
+      <div className="sticky top-0 z-20 flex  items-center justify-between lg:py-2 bg-white">
+        <div className="flex p-1 gap-2 rounded-md ">
+          {Static.user.map((navItem: any) => (
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="rounded-100 bg-white px-7 py-10px font-sans text-sm font-light"
+              className="rounded-md bg-white text-gray-900 px-5 py-10px font-sans text-lg font-medium "
             >
               {navItem.name}
             </Link>
           ))}
-        </div> */}
+        </div>
+
+       {/* Resume button */}
+        <div className="flex p-1 gap-2 rounded-md pr-6 ">
+        {Static.navItems.map((navItem: any) => (
+            <Link
+              to={`${navItem.path}`}
+              key={navItem}
+              className="rounded-md text-gray-600 px-2 py-10px font-sans text-sm font-medium"
+            >
+              {navItem.name}
+            </Link>
+          ))}
+          
+          {Static.Accentbutton.map((navItem: any) => (
+            <Link
+              to={`${navItem.path}`}
+              key={navItem}
+              className="rounded-md bg-blue-700 text-gray-100 px-2 py-10px font-sans text-sm font-medium"
+            >
+              {navItem.name}
+            </Link>
+          ))}
+        </div>
       </div>
       {children}
       {/* <div className=" sticky bottom-10 z-10 mx-auto flex w-max flex-row items-center justify-center gap-1 rounded-3xl bg-studio-white p-1 px-3 py-2 text-black backdrop-blur-lg">

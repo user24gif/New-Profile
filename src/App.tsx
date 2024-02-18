@@ -8,26 +8,13 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <Layout>
-      <div className="flex h-70vh flex-col items-center justify-center gap-2 py-10">
+      <div className="flex h-70vh flex-col items-center justify-center gap-1 py-10">
         <p className="max-w-3xl text-center text-4xl font-medium leading-40">
-        <span className="font-light">Hello! I'm</span> <br />Ramanan Vijayaragavan
+          Product Designer
         </p>
-        <p className="w-3/6 text-center text-base font-regular leading-8 text-oh-gray">
-        <b>Product Designer</b> loves to excite people with great visuals & strives to understand human cognition to make product experience better for people.
+        <p className="w-2/5	 text-center text-base font-regular leading-7 text-oh-gray">
+          loves to excite people with great visuals & strives to understand human cognition to make product experience better for people.
         </p>
-        {/* <div className="flex gap-10px p-1">
-          {Static.headerItems.map((navItem: any, idx: number) => (
-            <p
-              key={navItem}
-              className={cx("px-3 py-2 font-sans text-sm font-light", {
-                "rounded-100 bg-studio-white backdrop-blur-lg ": idx !== 0,
-                "bg-transparent": idx == 0,
-              })}
-            >
-              {navItem}
-            </p>
-          ))}
-        </div> */}
       </div>
       <div className="mx-auto grid max-w-1400px grid-cols-2 gap-2 px-4 py-4">
         {Static.cards.map((card: any) => (
