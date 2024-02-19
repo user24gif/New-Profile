@@ -9,13 +9,22 @@ function App() {
   return (
     <Layout>
       <div className="flex h-70vh flex-col items-center justify-center gap-1 py-10">
-        <p className="max-w-3xl text-center text-4xl font-medium leading-40">
+        <p className="max-w-3xl text-center text-4xl font-semibold leading-40">
           Product Designer
         </p>
         <p className="w-2/5	 text-center text-base font-regular leading-7 text-oh-gray">
           loves to excite people with great visuals & strives to understand human cognition to make product experience better for people.
         </p>
+
+      {/* Social Set */}
+      <div className="flex pt-3 gap-4"> 
+        <img src="Images/linkedin (1).svg" alt="Linkedin" />
+        <img src="Images/icons8-medium-new.svg" alt="Medium" />
+        <img src="Images/twitter.svg" alt="twitter" />
+        <img src="Images/mail.svg" alt="twitter" />
       </div>
+      </div>
+      {/* Card content */}
       <div className="mx-auto grid max-w-1400px grid-cols-2 gap-2 px-4 py-4">
         {Static.cards.map((card: any) => (
           <Link
@@ -36,11 +45,39 @@ function App() {
           </Link>
         ))}
       </div>
-      <div className="py-8 text-center">
-        <p className="text-4xl font-medium leading-44">Let's work together.</p>
-        <p className="text-4xl font-medium text-oh-gray">Get in touch.</p>
+      <div className="py-8 mt-6 bg-gray-50 text-center">
+        <p className="text-4xl font-medium pb-1 leading-120">Let's work together</p>
+        <p className="text-4xl font-medium text-oh-gray">Get in touch</p>
+        {/* Send mail button */}
+        <div className="pt-4">         
+           {Static.Sendmailbutton.map((navItem: any) => (
+            <Link
+              to={`${navItem.path}`}
+              key={navItem}
+              className="rounded-md bg-gray-900 text-gray-100 px-2 py-10px font-sans text-sm font-medium tracking-wide"
+              
+            >
+              {navItem.name}
+            </Link>
+          ))}
+          {/* social set */}
+        <div className="flex pt-6 align-center justify-center gap-4"> 
+        <img src="Images/linkedin (1).svg" alt="Linkedin" />
+        <img src="Images/icons8-medium-new.svg" alt="Medium" />
+        <img src="Images/twitter.svg" alt="twitter" />
+        <img src="Images/mail.svg" alt="twitter" />
+       </div>
+        </div> 
+
+        <div className="pt-6">
+          <p className="  text-gray-600 text-sm"> © Designed & Developed by Ramanan</p>
+        </div>  
+        </div>
+        <div>
       </div>
-      <footer className="flex flex-row items-center justify-between p-8">
+
+      {/* Alt-Footer */}
+      {/* <footer className="flex flex-row items-center justify-between p-8">
         <div className="flex items-center gap-1">
           <img src={Asterik} alt="cta-icon" className="h-4 w-4" />
           <p>Ramanan Vijayragavan {new Date().getFullYear()}</p>
@@ -50,7 +87,7 @@ function App() {
           <p>LinkedIn</p>
           <p>Mail</p>
         </div>
-      </footer>
+      </footer> */}
     </Layout>
   );
 }

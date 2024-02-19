@@ -10,13 +10,13 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <div className="sticky top-0 z-20 flex  items-center justify-between lg:py-2 bg-white">
+      <div className="sticky top-0 z-20 flex  items-center justify-between lg:py-1 bg-white">
         <div className="flex p-1 gap-2 rounded-md ">
           {Static.user.map((navItem: any) => (
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="rounded-md bg-white text-gray-900 px-5 py-10px font-sans text-lg font-medium "
+              className="rounded-md bg-white text-gray-900 px-5 py-10px font-serif text-lg font-medium "
             >
               {navItem.name}
             </Link>
@@ -29,7 +29,7 @@ function Layout({ children }: LayoutProps) {
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="rounded-md text-gray-600 px-2 py-10px font-sans text-sm font-medium"
+              className="rounded-md text-gray-600 px-2 py-10px font-sans text-sm font-semibold"
             >
               {navItem.name}
             </Link>
@@ -39,7 +39,7 @@ function Layout({ children }: LayoutProps) {
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="rounded-md bg-blue-700 text-gray-100 px-2 py-10px font-sans text-sm font-medium"
+              className="rounded-md bg-gray-900 text-gray-100 px-2 py-10px font-sans text-sm font-medium tracking-wide"
             >
               {navItem.name}
             </Link>

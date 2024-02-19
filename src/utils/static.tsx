@@ -11,11 +11,14 @@ export const Static: any = {
   Accentbutton: [
     { name: "Resume", path: "/" },
   ],
+  Sendmailbutton: [
+    { name: "Send Mail", path: "/" },
+  ],
   headerItems: ["Expertise", "Branding", "Product", "Design Systems"],
   cards: [
     { name: "UX behind Spotify Wrapped", bg: "bg-Spotify" },
-    { name: "Correlated", bg: "bg-correlated" },
-    { name: "Channel 5", bg: "bg-channel-5" },
-    { name: "Ronald Abram", bg: "bg-ronald-abram" },
+    { name: "Customer Research Document - D", bg: "bg-gray-100" },
+    { name: "User Research Document - Q", bg: "bg-gray-100"},
+    { name: "Brand Design", bg: "bg-gray-100" },
   ],
 };

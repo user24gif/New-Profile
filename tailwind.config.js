@@ -23,6 +23,9 @@ export default {
         "296px":"296px",
         "60px": "60px",
       },
+      fontFamily: {
+        'sans': ['inter', 'Arial', 'sans-serif'],
+      },
       backgroundColor: {
         "studio-white": "rgba(232, 229, 228, 0.5)",
       },
@@ -36,7 +39,7 @@ export default {
         44: "44px",
       },
       backgroundImage: {
-        Spotify: "url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/12/Generic-FTR-headers_V10-1920x733.jpg')",
+        Spotify: "url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/Spotify_Logo_RGB_White-1.png')",
         correlated:
           "url('https://framerusercontent.com/images/QVKFKT3dyGxloXfzzpurVKNMM6M.jpg?scale-down-to=1024')",
         "channel-5":
@@ -69,7 +72,9 @@ export default {
       },
       colors: {
         "oh-gray": "#7f7f7f",
-        "Black": "#000"
+        "Black": "#000",
+        "Start": "#ff00cc",
+        "End": "#333399"
       },
     },
   },
