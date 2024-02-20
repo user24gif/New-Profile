@@ -4,7 +4,10 @@ import cx from "classnames";
 import Arrow from "./assets/arrow-up-right.svg";
 import Asterik from "./assets/asterik.png";
 import { Link } from "react-router-dom";
-
+import Linkedin from '../src/assets/Images/linkedin (1).svg' 
+import Mail from '../src/assets/Images/mail.svg' 
+import Twitter from '../src/assets/Images/twitter.svg' 
+import Medium from '../src/assets/Images/medium.png' 
 function App() {
   return (
     <Layout>
@@ -18,10 +21,10 @@ function App() {
 
       {/* Social Set */}
       <div className="flex pt-3 gap-4"> 
-        <img src="Images/linkedin (1).svg" alt="Linkedin" />
-        <img src="Images/icons8-medium-new.svg" alt="Medium" />
-        <img src="Images/twitter.svg" alt="twitter" />
-        <img src="Images/mail.svg" alt="twitter" />
+        <img src={Linkedin} alt="Linkedin" />
+        <img className="h-3" src={Medium} alt="Medium" />
+        <img src={Twitter} alt="twitter" />
+        <img src={Mail} alt="mail" />
       </div>
       </div>
       {/* Card content */}
@@ -61,12 +64,12 @@ function App() {
             </Link>
           ))}
           {/* social set */}
-        <div className="flex pt-6 align-center justify-center gap-4"> 
-        <img src="Images/linkedin (1).svg" alt="Linkedin" />
-        <img src="Images/icons8-medium-new.svg" alt="Medium" />
-        <img src="Images/twitter.svg" alt="twitter" />
-        <img src="Images/mail.svg" alt="twitter" />
-       </div>
+        <div className="flex pt-6 align-center justify-center gap-4">  
+        <img src={Linkedin} alt="Linkedin" />
+        <img className="h-3" src={Medium} alt="Medium" />
+        <img src={Twitter} alt="twitter" />
+        <img src={Mail} alt="mail" />
+      </div>
         </div> 
 
         <div className="pt-6">
