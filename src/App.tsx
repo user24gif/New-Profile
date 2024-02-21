@@ -30,8 +30,10 @@ function App() {
       {/* Card content */}
       <div className="mx-auto grid max-w-1400px grid-cols-2 gap-2 px-4 py-4">
         {Static.cards.map((card: any) => (
-          <Link
-            to="/profile"
+          <div
+          onClick={()=>{
+            window.open(card.redirect_url)
+          }}
             key={card.name}
             // className={`${card.bg} lg:flex-shrink lg:max-w-650px  lg:w-full lg:h-496px rounded-xl bg-cover bg-center`}
             className={`${card.bg}  group relative h-496px rounded-xl bg-cover bg-center after:absolute after:left-0 after:top-0 after:h-496px after:w-full after:content-[''] hover:after:rounded-xl hover:after:backdrop-blur-sm hover:after:backdrop-brightness-50 hover:after:transition hover:after:duration-500 hover:after:ease-out`}
@@ -39,13 +41,12 @@ function App() {
             <p className="hidden group-hover:absolute group-hover:left-2 group-hover:top-2 group-hover:z-10 group-hover:block group-hover:font-medium group-hover:text-white">
               {card.name}
             </p>
-            <Link
-              to="/profile"
+            <div
               className="hidden group-hover:absolute group-hover:right-2 group-hover:top-2 group-hover:z-10 group-hover:block group-hover:rounded-full group-hover:bg-white group-hover:p-2 "
             >
               <img src={Arrow} alt="cta-icon" />
-            </Link>
-          </Link>
+            </div>
+          </div>
         ))}
       </div>
       <div className="py-8 mt-6 bg-gray-50 text-center">
