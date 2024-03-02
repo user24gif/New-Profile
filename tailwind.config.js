@@ -38,7 +38,10 @@ export default {
         86: "86px",
         44: "44px",
       },
+      
       backgroundImage: {
+        Aboutimage:"url('https://images.pexels.com/photos/8354525/pexels-photo-8354525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+        
         Spotify: "url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/Spotify_Logo_RGB_White-1.png')",
         correlated:
           "url('https://framerusercontent.com/images/QVKFKT3dyGxloXfzzpurVKNMM6M.jpg?scale-down-to=1024')",
@@ -74,7 +77,10 @@ export default {
         "oh-gray": "#7f7f7f",
         "Black": "#000",
         "Start": "#ff00cc",
-        "End": "#333399"
+        "End": "#333399",
+        "Accent-Green1": "#15B79E",
+        "Accent-Green2": "#0E9384",
+        "Accent-Green3": "#107569",
       },
     },
   },

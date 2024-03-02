@@ -2,7 +2,12 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 
 function About() {
-  return <Layout>About</Layout>;
+  return <Layout>
+    caskcn
+
+
+    
+  </Layout>;
   
 }
 

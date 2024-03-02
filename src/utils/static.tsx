@@ -21,4 +21,5 @@ export const Static: any = {
     { name: "User Research Document - Q", bg: "bg-gray-100", redirect_url:""},
     { name: "Brand Design", bg: "bg-gray-100" , redirect_url:""},
   ],
+  ProfileImage: [{bg:"Aboutimage"}],
 };

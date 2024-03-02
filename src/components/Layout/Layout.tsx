@@ -29,7 +29,7 @@ function Layout({ children }: LayoutProps) {
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="rounded-md text-gray-600 px-2 py-10px font-sans text-sm font-semibold"
+              className="rounded-md text-gray-600 hover:text-Accent-Green2 px-2 py-10px font-sans text-sm font-semibold"
             >
               {navItem.name}
             </Link>
@@ -39,7 +39,7 @@ function Layout({ children }: LayoutProps) {
             <Link
               to={`${navItem.path}`}
               key={navItem}
-              className="rounded-md bg-gray-900 text-gray-100 px-2 py-10px font-sans text-sm font-medium tracking-wide"
+              className="rounded-md bg-gray-900 hover:bg-Accent-Green1 text-gray-100 px-2 py-10px font-sans text-sm font-medium tracking-wide"
             >
               {navItem.name}
             </Link>
